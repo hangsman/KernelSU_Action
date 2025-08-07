@@ -266,7 +266,7 @@ jobs:
 
     - name: Upload AnyKernel3
       if: env.CHECK_FILE_IS_OK == 'true'
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-pages-artifact@v3
       with:
         name: AnyKernel3${{ env.UPLOADNAME }}-${{ env.DEVICE }}-${{ env.BUILD_TIME }}
         path: kernel_workspace/AnyKernel3/*
